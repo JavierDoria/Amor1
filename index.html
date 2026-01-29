@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eterno Resplandor | Historia de Nosotros</title>
+    <meta name="description"
+        content="Un espacio digital dedicado a nuestra historia, donde el futuro y el amor se encuentran.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Cursor follower -->
+    <div class="cursor-glow"></div>
+
+    <!-- Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar glass">
+        <div class="logo">Eterno<span class="highlight">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#mensajes">Mensajes</a></li>
+            <li><a href="#historia">Nuestra Historia</a></li>
+            <li><a href="#momentos">Nuestros recuerdos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch-text" data-text="Nuestro Amor">Nuestro Amor</h1>
+            <h2 class="subtitle">Trasciende el Tiempo y el Espacio</h2>
+            <p class="hero-desc">Una conexión digital escrita en las estrellas, diseñada para durar por siempre en un
+                universo infinito.</p>
+            <a href="#historia" class="btn-glow">Explorar Universo</a>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </header>
+    
+
+    <!-- Quotes Section -->
+    <section id="mensajes" class="quotes-section">
+        <div class="container">
+            <h2 class="section-title">Fragmentos de Luz</h2>
+            <div class="cards-grid">
+                <div class="glass-card reveal">
+                    <div class="card-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                    <h3>Sincronía</h3>
+                    <p>"En un mundo de caos digital, tú eres mi única constante, mi señal más clara."</p>
+                </div>
+                <div class="glass-card reveal delay-1">
+                    <div class="card-icon"><i class="fa-solid fa-infinity"></i></div>
+                    <h3>Infinito</h3>
+                    <p>"No hay distancia en el futuro que pueda separar lo que nuestras almas unieron."</p>
+                </div>
+                <div class="glass-card reveal delay-2">
+                    <div class="card-icon"><i class="fa-solid fa-star"></i></div>
+                    <h3>Destino</h3>
+                    <p>"Como dos estrellas colapsando en una, nuestro encuentro era inevitable."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline/Visual Section -->
+    <section id="historia" class="timeline-section">
+        <div class="container">
+            <h2 class="section-title">Línea de Tiempo Estelar</h2>
+            <div class="timeline">
+                <div class="timeline-item reveal left">
+                    <div class="timeline-content glass">
+                        <span class="date">El Origen</span>
+                        <h3>Primer Encuentro</h3>
+                        <p>El momento exacto donde las probabilidades convergieron y todo comenzó.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal right">
+                    <div class="timeline-content glass">
+                        <span class="date">La Conexión</span>
+                        <h3>Primer "Te Amo"</h3>
+                        <p>Palabras que viajaron a la velocidad de la luz para cambiarlo todo.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal left">
+                    <div class="timeline-content glass">
+                        <span class="date">El Hoy</span>
+                        <h3>Construyendo Futuro</h3>
+                        <p>Cada día es un nuevo código que escribimos juntos en este programa llamado vida.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal right">
+                    <div class="timeline-content glass">
+                        <span class="date">El Mañana</span>
+                        <h3>Sueños Compartidos</h3>
+                        <p>Proyectos, viajes y una vida entera esperando ser compilada.</p>
+                    </div>
+                </div>
+                <section id="momentos" class="timeline-section"> 
+                    <div class="container">
+                        <h2  class="section-title">Momentos felices a tu lado</h2>
+                        <div class="timeline">
+                            <div  class="timeline-item reveal">
+                                <div class="timeline-content glass">
+                                    <img src="https://i.pinimg.com/236x/ca/90/1d/ca901d219bd2d363535bad80eb99bf19.jpg" alt="" width="80%">
+                                    <span class="date">Imagen</span>
+                                    <h3>Sueños Compartidos</h3>
+                                    <p>Proyectos, viajes y una vida entera esperando ser compilada.</p>
+                                </div>
+                            </div>
+                            <div  class="timeline-item reveal">
+                                <div class="timeline-content glass">
+                                    <img src="https://img.freepik.com/foto-gratis/pareja-enamorada_158595-2523.jpg" alt="" width="80%">
+                                    <span class="date">Imagen</span>
+                                    <h3>Sueños Compartidos</h3>
+                                    <p>Proyectos, viajes y una vida entera esperando ser compilada.</p>
+                                </div>
+                            </div>
+                            <div  class="timeline-item reveal ">
+                                <div class="timeline-content glass">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYsE94TH8mJbbs69fdTH-BcHbhkLboFrE3NA&s" alt="" width="80%">
+                                    <span class="date">Imagen</span>
+                                    <h3>Sueños Compartidos</h3>
+                                    <p>Proyectos, viajes y una vida entera esperando ser compilada.</p>
+                                </div>
+                            </div>
+                            <div  class="timeline-item reveal">
+                                <div class="timeline-content glass">
+                                    <img src="https://www.loschiquisdelnortestudio.com/_next/image?url=https%3A%2F%2Fbookfocal-production.b-cdn.net%2Fimages%2F9ca1a33d588c41b88b52020b60f9fb61.jpg&w=3840&q=75" alt="" width="80%">
+                                    <span class="date">Imagen</span>
+                                    <h3>Sueños Compartidos</h3>
+                                    <p>Proyectos, viajes y una vida entera esperando ser compilada.</p>
+                                </div>
+                            </div>
+                            <div  class="timeline-item reveal">
+                                <div class="timeline-content glass">
+                                    <img src="https://img.freepik.com/foto-gratis/feliz-pareja-enamorados-abrazandose_23-2148379019.jpg?semt=ais_hybrid&w=740&q=80" alt="" width="80%">
+                                    <span class="date">Imagen</span>
+                                    <h3>Sueños Compartidos</h3>
+                                    <p>Proyectos, viajes y una vida entera esperando ser compilada.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Hecho con <i class="fa-solid fa-heart heart-pulse"></i> y Polvo de Estrellas</p>
+            <p class="copyright">© 2026 - Para Siempre</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
