@@ -1,9 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    /* 
-     * 1. SCROLL REVEAL ANIMATION
-     */
+    
     const reveals = document.querySelectorAll('.reveal');
 
     const revealOnScroll = () => {
@@ -26,9 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     revealOnScroll();
 
 
-    /* 
-     * 2. NAVBAR BLUR ON SCROLL
-     */
+   
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -39,9 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    /* 
-     * 3. CUSTOM CURSOR GLOW EFFECT
-     */
     const cursor = document.querySelector('.cursor-glow');
     let mouseX = 0;
     let mouseY = 0;
@@ -53,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         mouseY = e.clientY;
     });
 
-    // Smooth follower animation
+    
     const animateCursor = () => {
         const dx = mouseX - cursorX;
         const dy = mouseY - cursorY;
@@ -66,27 +59,19 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     animateCursor();
 
-
-    /* 
-     * 4. CANVAS PARTICLE SYSTEM (CONSTELLATION EFFECT)
-     */
     const canvas = document.getElementById('bg-canvas');
     const ctx = canvas.getContext('2d');
 
     let particlesArray;
 
-    // Set canvas dimensions
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    // Handle resize
     window.addEventListener('resize', () => {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
         initParticles();
     });
-
-    // Particle Class
     class Particle {
         constructor() {
             this.x = Math.random() * canvas.width;
@@ -96,19 +81,14 @@ document.addEventListener('DOMContentLoaded', () => {
             this.size = Math.random() * 2 + 0.5; // Small stars
             this.color = Math.random() > 0.5 ? '#ff0055' : '#7000ff'; // Randomize color
         }
-
-        // Draw individual particle
         draw() {
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
             ctx.fillStyle = this.color;
-            ctx.globalAlpha = 0.6; // slightly transparent
+            ctx.globalAlpha = 0.6; 
             ctx.fill();
         }
-
-        // Update particle position
         update() {
-            // Boundary checks
             if (this.x > canvas.width || this.x < 0) {
                 this.directionX = -this.directionX;
             }
@@ -123,7 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Initialize Particles
     function initParticles() {
         particlesArray = [];
         const numberOfParticles = (canvas.width * canvas.height) / 15000; // Density
@@ -132,7 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Animation Loop
     function animateParticles() {
         requestAnimationFrame(animateParticles);
         ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -143,7 +121,6 @@ document.addEventListener('DOMContentLoaded', () => {
         connectParticles();
     }
 
-    // Connect particles with lines if close enough
     function connectParticles() {
         let opacityValue = 1;
         for (let a = 0; a < particlesArray.length; a++) {
@@ -154,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (distance < (canvas.width / 9) * (canvas.height / 9)) {
                     opacityValue = 1 - (distance / 20000);
                     if (opacityValue > 0) {
-                        ctx.strokeStyle = `rgba(112, 0, 255, ${opacityValue * 0.15})`; // Low opacity lines
+                        ctx.strokeStyle = `rgba(112, 0, 255, ${opacityValue * 0.15})`;
                         ctx.lineWidth = 1;
                         ctx.beginPath();
                         ctx.moveTo(particlesArray[a].x, particlesArray[a].y);

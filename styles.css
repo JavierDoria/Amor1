@@ -1,27 +1,22 @@
-/* 
- * Eternal Nebulae - Futuristic Romantic Theme
- * CSS Variables & Base Styles
- */
+
 
 :root {
     --bg-color: #050508;
     --text-main: #ffffff;
     --text-muted: #a0a0c0;
 
-    /* Neon Glows */
+    
     --primary-glow: #ff0055;
-    /* Hot Pink */
+    
     --secondary-glow: #7000ff;
-    /* Deep Purple */
+   
     --accent-glow: #00e5ff;
-    /* Cyan */
+  
 
-    /* Glassmorphism */
     --glass-bg: rgba(255, 255, 255, 0.03);
     --glass-border: rgba(255, 255, 255, 0.08);
     --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 
-    /* Fonts */
     --font-heading: 'Space Grotesk', sans-serif;
     --font-body: 'Outfit', sans-serif;
 }
@@ -51,8 +46,6 @@ canvas#bg-canvas {
     z-index: -1;
     opacity: 0.6;
 }
-
-/* Custom Cursor Glow */
 .cursor-glow {
     width: 400px;
     height: 400px;
@@ -66,7 +59,6 @@ canvas#bg-canvas {
     transition: transform 0.1s ease-out;
 }
 
-/* Typography & Utilities */
 h1,
 h2,
 h3 {
@@ -85,7 +77,6 @@ a {
     padding: 0 20px;
 }
 
-/* Navigation */
 .navbar {
     position: fixed;
     top: 0;
@@ -152,8 +143,6 @@ a {
 .nav-links a:hover::after {
     width: 100%;
 }
-
-/* Hero Section */
 .hero {
     height: 100vh;
     display: flex;
@@ -242,7 +231,6 @@ a {
     transform: translateY(-3px);
 }
 
-/* Scroll Indicator */
 .scroll-indicator {
     position: absolute;
     bottom: 40px;
@@ -280,7 +268,6 @@ a {
     animation: scroll-wheel 1.5s infinite;
 }
 
-/* Quotes Section (Glassmorphism) */
 .quotes-section {
     padding: 100px 0;
     position: relative;
@@ -359,14 +346,13 @@ a {
     line-height: 1.6;
 }
 
-/* Timeline Section */
 .timeline-section {
     padding: 100px 0;
 }
 .timeline-section1 {
     width: 100%;
-  height: 220px;          /* tamaño fijo para todas */
-  object-fit: cover;     /* recorta sin deformar */
+  height: 220px;        
+  object-fit: cover;     
   border-radius: 12px;
 }
 
@@ -466,7 +452,6 @@ a {
     color: var(--text-muted);
 }
 
-/* Footer */
 .footer {
     padding: 40px 0;
     text-align: center;
@@ -485,7 +470,6 @@ a {
     color: #555;
 }
 
-/* Animations Keyframes */
 @keyframes glitch-anim-1 {
     0% {
         clip-path: inset(20% 0 80% 0);
@@ -578,7 +562,6 @@ a {
     }
 }
 
-/* Reveal Animations Classes */
 .reveal {
     opacity: 0;
     transform: translateY(30px);
@@ -598,7 +581,6 @@ a {
     transition-delay: 0.4s;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .glitch-text {
         font-size: 3rem;
@@ -608,7 +590,6 @@ a {
         display: none;
     }
 
-    /* Mobile Menu could be added here */
 
     .timeline::after {
         left: 31px;
